@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Kamu 🤍</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:'Poppins', sans-serif;
+  background: linear-gradient(180deg,#ff9a9e,#fad0c4);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+}
+.main{
+  width:100%;
+  max-width:420px;
+  padding:18px;
+}
+.card{
+  background:rgba(255,255,255,0.18);
+  backdrop-filter: blur(12px);
+  border-radius:24px;
+  padding:20px;
+  margin-bottom:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+  animation:fadeUp .8s ease;
+}
+h1{
+  margin:0;
+  font-size:28px;
+}
+h2{
+  font-size:20px;
+  margin-bottom:10px;
+}
+p{
+  font-size:15px;
+  line-height:1.7;
+}
+.photos{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+  padding-bottom:8px;
+}
+.photos img{
+  width:130px;
+  height:180px;
+  border-radius:18px;
+  object-fit:cover;
+  box-shadow:0 8px 18px rgba(0,0,0,.35);
+}
+
+/* AUDIO FIX */
+.audio-box{
+  background:rgba(255,255,255,0.25);
+  border-radius:16px;
+  padding:12px;
+}
+audio{
+  width:100%;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.button{
+  display:inline-block;
+  margin-top:12px;
+  padding:12px 22px;
+  border-radius:30px;
+  background:#fff;
+  color:#ff5f8f;
+  font-weight:600;
+  text-decoration:none;
+  box-shadow:0 6px 15px rgba(0,0,0,.25);
+}
+footer{
+  text-align:center;
+  font-size:12px;
+  opacity:.85;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(25px)}
+  to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+<div class="main">
+
+  <div class="card">
+    <h1>Hai, Kamu 🤍</h1>
+    <p>
+      Aku nggak tahu sejak kapan,<br>
+      tapi namamu jadi hal yang<br>
+      paling sering muncul di pikiranku.<br><br>
+      Kalau perasaan ini salah,<br>
+      biar aku yang salah sendirian.<br>
+      Tapi kalau ini benar,<br>
+      semoga kamu juga merasakannya.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🎧 Lagu Ini Tentang Kamu</h2>
+    <div class="audio-box">
+      <audio controls autoplay loop>
+        <source src="https://files.catbox.moe/y6dwlh.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📷 Kamu</h2>
+    <div class="photos">
+      <img src="foto1.jpg">
+      <img src="foto2.jpg">
+      <img src="foto3.jpg">
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🤍 Jujur ya</h2>
+    <p>
+      Aku nggak minta banyak.<br>
+      Cuma satu hal kecil:<br><br>
+      Maukah kamu jadi alasan<br>
+      aku tersenyum setiap hari?
+    </p>
+    <a class="button">Aku Mau 💞</a>
+  </div>
+
+  <footer>
+    Dibuat khusus untukmu
+  </footer>
+
+</div>
+</body>
+</html>
